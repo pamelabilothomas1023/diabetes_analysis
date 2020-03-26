@@ -4,7 +4,7 @@ This analysis was written specifically for the healthcare data that was provided
 
 Our data consists of four files: diagnosis data, which contains ICD-9 and 10 codes, demographic data, continuous clinical data, and qualitative clinical data. These data types are analyzed in read_diagnosis_data.py, read_demographic_file.py, read_clin_var_file.py, and read_clin_var_file_status.py. Each of these output files that will be used for further analysis.
 
-Our analysis then creates a homogenous network of these data through the Create_DAG_Spark.py file. Then, data analysis is done through the readpythongraph_spark.py and dataanalysis_spark.py files. Finally, predictions are made using the predict_spark1.py file.
+Our analysis then creates a homogenous network of these data through the Create_DAG_Spark.py file. Then, data analysis is done through the readpythongraph_spark.py and dataanalysis_spark.py files. Finally, predictions are made using the predict_spark.py file.
 
 Please refer to call_python_graph_spark.sh to understand how the files are called. Each Python file takes in arguments directing the code to the type of complication that is being analyzed. Additionally, read_diagnosis_data.py takes in a string consisting of ICD-9 or 10 codes that are used to code for the particular complication. Predict_spark.py also takes an argument that makes a prediction based upon how many edges will be included in the final output.
 
